@@ -347,7 +347,6 @@ body {
 }
 .art-meta span { padding-inline: 18px; border-left: 1px solid #E2DCDA; }
 .art-meta span:first-child { border-left: 0; }
-.art-meta strong { font-weight: 500; color: var(--ink); }
 
 /* Imagen principal */
 .art-portada {
@@ -380,7 +379,6 @@ body {
 }
 .texto h2 em { font-style: italic; color: var(--rojo); }
 .texto strong { font-weight: 500; color: var(--ink); }
-.texto a { color: var(--ink); text-decoration-color: var(--rojo); text-underline-offset: 3px; }
 
 .cita {
   margin: 2.4em 0; padding: 0; text-align: center;
@@ -388,7 +386,6 @@ body {
 }
 .cita::before, .cita::after { content: ""; display: block; width: 40px; height: 1px; background: var(--rojo); margin: 0 auto 24px; }
 .cita::after { margin: 24px auto 0; }
-.cita cite { display: block; margin-top: 14px; font: 500 11px/1 var(--f-body); font-style: normal; letter-spacing: .2em; text-transform: uppercase; color: var(--ink-2); }
 
 .dato {
   margin: 2em 0; padding: 24px 28px; background: #FAF8F7; border: 1px solid #EFEAE8;
