@@ -130,24 +130,6 @@ body {
 .cta--ghost::before { background: var(--rojo); }
 .cta--ghost:hover { color: #fff; border-color: var(--rojo); }
 
-/* ---------- Indicador de scroll ---------- */
-.desliza {
-  position: absolute; left: 50%; bottom: max(28px, env(safe-area-inset-bottom, 0px)); z-index: 1;
-  translate: -50% 0; display: grid; justify-items: center; gap: 10px;
-  font: 500 10px/1 var(--f-body); letter-spacing: .3em; text-transform: uppercase; padding-left: .3em;
-  color: var(--ink-2); text-decoration: none;
-  opacity: 0; animation: aparece-suave 1.2s var(--ease) calc(var(--t-hero) + 1s) forwards;
-  transition: color .4s var(--ease);
-}
-.desliza:hover { color: var(--rojo); }
-.desliza i { width: 1px; height: 36px; background: #E2DCDA; position: relative; overflow: hidden; }
-.desliza i::after {
-  content: ""; position: absolute; left: 0; top: 0; width: 1px; height: 40%; background: var(--rojo);
-  animation: gota 2.2s var(--telon) infinite;
-}
-@keyframes gota { from { transform: translateY(-100%); } to { transform: translateY(260%); } }
-@keyframes aparece-suave { to { opacity: 1; } }
-
 /* Flecha de "leer": un solo icono, pintado con el color del texto */
 .flecha {
   display: inline-block; flex: none; width: 16px; height: 10px; background: currentColor;
@@ -312,8 +294,6 @@ body {
 @media (prefers-reduced-motion: reduce) {
   .intro { display: none; }
   .grafica { animation: none; opacity: 1; }
-  .desliza { animation: none; opacity: 1; }
-  .desliza i::after { animation: none; }
   .js .al-scroll { opacity: 1; transform: none; filter: none; transition: none; }
   .name, .desc, .ctas, .entra { animation: none; opacity: 1; transform: none; filter: none; }
 }
