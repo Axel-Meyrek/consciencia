@@ -37,7 +37,7 @@ const tarjetaDeArticulo = html => {
     <p class="marca">Espacio Con<span class="s">(s)</span><em>Ciencia</em></p>
     <p class="cat">${cat} · ${fecha}</p>
     <h1 class="titulo" style="--tam:${tam}px">${titulo}</h1>
-    <p class="pie">Facultad de Ciencias · UPAEP</p>
+    <p class="pie">Departamento de Ciencias · UPAEP</p>
   </div>
   <div class="foto"><img src="../${src}" style="object-position:${posicion}"></div>
 </div>`;
@@ -56,7 +56,7 @@ const tarjetaDePortada = () => {
   </svg>
   <div class="contenido">
     <p class="nombre"><span>Espacio</span><span>Con<span class="s" style="display:inline">(s)</span><em>Ciencia</em></span></p>
-    <p class="desc">El boletín de la <b>Facultad de Ciencias de la UPAEP</b></p>
+    <p class="desc">El boletín del <b>Departamento de Ciencias de la UPAEP</b></p>
   </div>
 </div>`;
 };
